@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../img/no_mans_sky_page.jpeg") no-repeat fixed center / cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+.header_home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height: 40px;
+    position: fixed;
+    background-color: black;
+}
+.navlist li {
+    display: inline;
+}
+
+.navpicture {
+    width: 100%;
+    height: 40px;
+}
+.navlink {
+    color: darkgrey;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navstart {
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+
+.navmid {
+    display: flex;
+    flex-direction: column;
+    width:5%;
+    align-items: center;
+}
+.navend {
+    width:47.5%;
+    margin-top: 5px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+    height: 100%;
+    margin-top: 50px;
+    color: grey;
+    background-color: black;
+}
+.heading_homepage {
+    font-size: 2em;
+    color: crimson;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.paragraph {
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+}
