@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color:white;
+}
+html {
+
+}
+@font-face {
+    font-family: GeosansLight-NMS;
+    src: url("./fonts/geonms-font.ttf");
+}
 body {
     background: url("../img/no_mans_sky_page.jpeg") no-repeat fixed center / cover;
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,6 +28,7 @@ body {
     height: 40px;
     position: fixed;
     background-color: black;
+    font-family:GeosansLight-NMS;
 }
 .navlist li {
     display: inline;
@@ -32,7 +42,7 @@ body {
     color: darkgrey;
     margin: 10px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .navstart {
@@ -61,19 +71,97 @@ article {
     width:50%;
     height: 100%;
     margin-top: 50px;
-    color: grey;
-    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 50px;
+}
+.gallery_article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:70%;
+    height: 100%;
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 70px;
+}
+
+.community_divs {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.community_pictures_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.community_pictures {
+    margin: 10px;
+    width: 80%;
+    height: 50%;
+}
+.community_pic_link {
+    display: flex;
+   justify-content: center;
+}
+.community_pictures_special {
+    margin: 10px;
+    width: 80%;
+    height: 250px;
+}
+.community_paragraph {
+    text-align: left;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.picture_page_article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:70%;
+    height: 100%;
+    margin-top: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: 'Muli', sans-serif;
+}
+.picture_h1 {
+    font-size: 3em;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-family:GeosansLight-NMS;
 }
 .heading_homepage {
     font-size: 2em;
     color: crimson;
+    text-align: center;
     margin-bottom: 3%;
     margin-top: 3%;
+    font-family:GeosansLight-NMS;
 }
-
+.rubrik {
+    font-family: GeosansLight-NMS;
+    font-size: 2em;
+}
 .paragraph {
     text-align: left;
-    align-self: flex-start;
-    margin-left: 10%;
-    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
