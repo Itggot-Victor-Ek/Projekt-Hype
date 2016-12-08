@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'GeosansLight-NMS';
+	src: url('GeosansLight-NMS.eot');
+	src: url('GeosansLight-NMS.eot?#iefix') format('embedded-opentype'),
+		url('GeosansLight-NMS.woff2') format('woff2'),
+		url('GeosansLight-NMS.woff') format('woff'),
+		url('GeosansLight-NMS.ttf') format('truetype'),
+		url('GeosansLight-NMS.svg#GeosansLight-NMS') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +20,19 @@ a {
 html {
 
 }
-@font-face {
-    font-family: GeosansLight-NMS;
-    src: url("./fonts/geonms-font.ttf");
-}
 body {
     background: url("../img/no_mans_sky_page.jpeg") no-repeat fixed center / cover;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content:center;
+}
+.underrubrik {
+    text-align: center;
+    font-size: 1.3em;
+}
+.margin {
+    margin: 20px;
 }
 .header_home {
     display: flex;
@@ -33,7 +47,13 @@ body {
 .navlist li {
     display: inline;
 }
-
+.navstart {
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+    align-items: flex-end;
+    margin-top: 5px;
+}
 .navpicture {
     width: 100%;
     height: 40px;
@@ -43,16 +63,11 @@ body {
     margin: 10px;
     text-decoration: none;
     font-size: 1.4em;
+    cursor:pointer;
 }
-
-.navstart {
-    display: flex;
-    flex-direction: column;
-    width: 47.5%;
-    align-items: flex-end;
-    margin-top: 5px;
+.navlink:hover {
+    color: #ff5e5e;
 }
-
 .navmid {
     display: flex;
     flex-direction: column;
@@ -63,7 +78,6 @@ body {
     width:47.5%;
     margin-top: 5px;
 }
-
 article {
     display: flex;
     align-items: center;
@@ -104,7 +118,7 @@ article {
 .community_pictures {
     margin: 10px;
     width: 80%;
-    height: 50%;
+    height: 70%px;
 }
 .community_pic_link {
     display: flex;
@@ -114,6 +128,12 @@ article {
     margin: 10px;
     width: 80%;
     height: 250px;
+    cursor: pointer;
+}
+.community_pictures_special:hover {
+    width: 83%;
+    height: 270px;
+    margin:0;
 }
 .community_paragraph {
     text-align: left;
@@ -155,6 +175,8 @@ article {
 .rubrik {
     font-family: GeosansLight-NMS;
     font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
 }
 .paragraph {
     text-align: left;
@@ -164,4 +186,183 @@ article {
     width: 85%;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+.forum_article {
+    width: 90%;
+    height: 100%; 
+}
+.forum_div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    background-color: rgba(135,135,135,0.4);
+    margin: 30px;
+    padding:10px;
+    border-radius: 25px;
+}
+.forum_topics {
+    width:10%
+    align-self: center;
+    text-align: center;
+}
+.forum_list li {
+    display: inline;
+}
+.number {
+    text-align: center;
+    margin-left: 21%;
+}
+.number_off {
+    text-align: center;
+    margin-left: 16%
+}
+.number_predict {
+    text-align: center;
+    margin-left: 21.5%;
+}
+.forum_link {
+    cursor:pointer;
+    
+}
+.forum_link:hover {
+    color:crimson;
+}
+.about_and_purchase{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.purchase{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 40%;
+    border-left: 4px red double;
+    border-right: 4px red double;
+    border-top: 4px blue double;
+    border-bottom: 4px blue double;
+    padding: 1%;
+    
+
+}
+
+.purchase_boxes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.ps4{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    margin-right: 3px;
+}
+
+.pc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    margin-left: 3px;
+}
+
+.about{
+   width: 75%;
+   margin-left: 2.5px;
+   margin-right: 2.5px;
+   
+   
+    
+}
+
+.ps4_pic{
+   width: 100%;
+   height: 1000%;
+   margin-top: 5px;
+}
+
+.pc_pic{
+    width: 100%;
+    height: 98%;
+    margin-top: 5px;
+}
+
+h3{
+    text-align: center;
+}
+
+.margin_paragraph{
+    margin-top: 15px;
+    
+
+    
+}
+
+
+.pegi{
+    align-self: center;
+    border: white solid 2px;
+    padding-top: 4px;
+    margin-bottom: 3px;
+}
+
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+    
+    
+
+}
+
+.facebook{
+    width: 100px;
+    margin-right: 50px;   
+
+}
+
+.twitter{
+    width: 100px; 
+    margin-left: 50px;
+    margin-right:50px;
+}
+
+.instagram{
+    width: 100px;
+    margin-left: 50px;  
+}
+
+.facebook_pic{
+    width: 100%; 
+}
+
+.twitter_pic{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 9.09px;
+}
+
+.instagram_pic{
+    width: 100%;
+}
+
+.center_paragraph{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
